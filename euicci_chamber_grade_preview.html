@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EUICCI Premium Preview</title>
+<style>
+:root {
+  --navy:#0f2740; --blue:#1b4f8a; --gold:#e0b24d; --ink:#16202a; --muted:#576575;
+  --shadow:0 14px 40px rgba(16,32,56,.10); --max:1220px;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--ink); background:linear-gradient(180deg,#f7fbff 0%,#fff 35%,#fff8ef 100%);
+}
+a { color:inherit; text-decoration:none; }
+.container { width:min(var(--max), calc(100% - 32px)); margin:0 auto; }
+.topbar {
+  position:sticky; top:0; z-index:20; backdrop-filter: blur(10px);
+  background:rgba(255,255,255,.78); border-bottom:1px solid rgba(15,39,64,.08);
+}
+.topbar-inner { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:14px 0; }
+.brand { display:flex; gap:14px; align-items:center; }
+.badge {
+  width:48px; height:48px; border-radius:16px; display:grid; place-items:center;
+  background:linear-gradient(135deg,var(--navy),var(--blue)); color:#fff; font-weight:800; box-shadow:var(--shadow);
+}
+.brand h1 { margin:0; font-size:18px; line-height:1.15; }
+.brand p { margin:2px 0 0; color:var(--muted); font-size:13px; }
+.lang-switch { display:flex; gap:10px; }
+.lang-switch button {
+  border:1px solid rgba(15,39,64,.12); background:#fff; padding:10px 14px; border-radius:999px;
+  font-weight:700; cursor:pointer;
+}
+.lang-switch button.active { background:var(--navy); color:#fff; border-color:var(--navy); }
+.hero { padding:58px 0 28px; }
+.hero-grid { display:grid; grid-template-columns:1.2fr .8fr; gap:22px; align-items:stretch; }
+.panel { background:#fff; border-radius:28px; box-shadow:var(--shadow); overflow:hidden; }
+.hero-main {
+  padding:34px; position:relative; background:
+    radial-gradient(circle at top right, rgba(224,178,77,.25), transparent 30%),
+    linear-gradient(135deg,#ffffff 0%, #eef5ff 58%, #fff8ed 100%);
+}
+.eyebrow {
+  display:inline-flex; gap:10px; align-items:center; background:#eef5ff; color:var(--blue);
+  padding:10px 14px; border-radius:999px; font-size:13px; font-weight:700;
+}
+.hero h2 { font-size:54px; line-height:1.02; margin:18px 0 16px; max-width:12ch; }
+.hero p.lead { font-size:18px; line-height:1.75; color:#304254; max-width:62ch; }
+.cta-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:24px; }
+.btn { padding:14px 18px; border-radius:14px; font-weight:800; display:inline-block; }
+.btn-primary { background:var(--navy); color:#fff; }
+.btn-secondary { background:#fff; color:var(--navy); border:1px solid rgba(15,39,64,.10); }
+.hero-side { display:grid; gap:16px; }
+.side-card { border-radius:28px; padding:24px; box-shadow:var(--shadow); background:#fff; }
+.side-card.navy { background:linear-gradient(135deg,var(--navy),#15375b); color:#fff; }
+.side-card.gold { background:linear-gradient(135deg,#fffaf0,#fff); }
+.stats { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px; }
+.stat {
+  background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.14);
+  border-radius:18px; padding:14px;
+}
+.stat strong { display:block; font-size:20px; }
+.section { padding:22px 0; }
+.section-head { display:flex; justify-content:space-between; gap:20px; align-items:end; margin-bottom:18px; }
+.section-head h3 { font-size:34px; margin:0; }
+.section-head p { margin:0; color:var(--muted); max-width:60ch; line-height:1.7; }
+.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+.card { background:#fff; border-radius:24px; box-shadow:var(--shadow); padding:24px; height:100%; }
+.card h4 { margin:0 0 10px; font-size:22px; }
+.card p, .card li { color:#405163; line-height:1.75; }
+.card.blue { background:linear-gradient(180deg,#eef5ff 0,#fff 100%); }
+.card.gold { background:linear-gradient(180deg,#fff8ed 0,#fff 100%); }
+.card.green { background:linear-gradient(180deg,#eefbf4 0,#fff 100%); }
+.card.rose { background:linear-gradient(180deg,#fff2f0 0,#fff 100%); }
+.card.violet { background:linear-gradient(180deg,#f5f1ff 0,#fff 100%); }
+.band { border-radius:28px; padding:28px; box-shadow:var(--shadow); background:#fff; }
+.band.navy { background:linear-gradient(135deg,var(--navy),#163a60); color:#fff; }
+.band.navy p, .band.navy li { color:rgba(255,255,255,.88); }
+.offer-list { display:grid; grid-template-columns:repeat(2,1fr); gap:12px 18px; padding:0; list-style:none; margin:18px 0 0; }
+.offer-list li { background:#fff; border-radius:16px; padding:14px 16px; box-shadow:0 8px 20px rgba(16,32,56,.06); }
+.timeline { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+.step { background:#fff; border-radius:22px; padding:18px; box-shadow:var(--shadow); }
+.step .num { width:34px; height:34px; border-radius:10px; background:var(--navy); color:#fff; display:grid; place-items:center; font-weight:800; margin-bottom:10px; }
+.leadership { display:grid; grid-template-columns:.72fr 1.28fr; gap:18px; }
+.portrait { background:linear-gradient(135deg,#eef5ff,#fff9ef); border-radius:28px; padding:18px; box-shadow:var(--shadow); }
+.portrait img { width:100%; border-radius:20px; display:block; aspect-ratio:4/5; object-fit:cover; background:#dfe7ef; }
+.footer { margin-top:28px; padding:34px 0 50px; }
+.footer-wrap { background:linear-gradient(135deg,var(--navy),#16365a); color:#fff; border-radius:30px; box-shadow:var(--shadow); padding:28px; }
+.footer-grid { display:grid; grid-template-columns:1.2fr .8fr; gap:18px; }
+.small { font-size:14px; color:var(--muted); }
+[data-lang] { display:none; }
+[data-lang].active { display:block; }
+@media (max-width: 980px) {
+  .hero-grid, .grid-3, .grid-2, .leadership, .footer-grid, .timeline { grid-template-columns:1fr; }
+  .hero h2 { font-size:40px; max-width:none; }
+  .offer-list { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="badge">EU</div>
+        <div>
+          <h1 id="brandName"></h1>
+          <p id="brandTag"></p>
+        </div>
+      </div>
+      <div class="lang-switch">
+        <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+        <button id="btn-fr" onclick="setLang('fr')">Français</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="app-en" data-lang="en" class="active"></div>
+    <div id="app-fr" data-lang="fr"></div>
+  </div>
+
+<script>
+const en = {"site": {"name": "Europe India Chamber of Commerce and Industry", "short": "EUICCI", "tagline": "Supporting Europe India Business Engagement", "location": "Paris, France"}, "hero": {"eyebrow": "Independent Europe India business platform", "title": "A practical bridge between Europe and India", "subtitle": "EUICCI supports companies, founders, professionals, and investors looking to build real business links between Europe and India with clarity, trusted guidance, and practical support.", "primaryCta": "Speak with EUICCI", "secondaryCta": "Explore Services"}, "introStats": [{"label": "Base", "value": "Paris, France"}, {"label": "Meetups", "value": "Paris and Brussels"}, {"label": "Focus", "value": "Business, trade, advisory"}, {"label": "Languages", "value": "English and French"}], "about": {"title": "About EUICCI", "p1": "The Europe India Chamber of Commerce and Industry brings together people and organisations that want to work across European and Indian markets. EUICCI exists to make this journey clearer, more useful, and more grounded in real business needs.", "p2": "Cross border growth often sounds simple from the outside. In reality, it depends on context, trust, timing, introductions, and local understanding. EUICCI helps reduce that distance by offering practical guidance, business access, and consulting support that helps people move from interest to action.", "p3": "Based in Paris, with regular business presence in Brussels, EUICCI is positioned to support discussions that matter to companies operating in Europe while staying closely connected to India focused opportunities."}, "why": {"title": "Why Europe and India", "items": [{"title": "Strong economic logic", "text": "Europe and India offer real room for trade, service partnerships, technology exchange, and long term commercial growth."}, {"title": "Real demand for support", "text": "Many businesses want to explore the other market but do not know where to start, who to trust, or how to move in the right order."}, {"title": "Better outcomes through guidance", "text": "Good support at the start can save time, reduce avoidable mistakes, and help people focus on the opportunities that are worth pursuing."}]}, "services": {"title": "Consulting and Advisory Services", "intro": "EUICCI offers value led support for people and businesses that need a serious partner for Europe India business engagement. The work is practical, human, and focused on outcomes that matter.", "cards": [{"title": "Market entry support", "text": "Help for companies exploring entry into Europe or India. This includes early market review, fit assessment, positioning guidance, and practical next steps."}, {"title": "Business introductions", "text": "Relevant introductions to potential partners, advisors, service providers, founders, and decision makers where there is a real basis for discussion."}, {"title": "Growth consulting", "text": "Support for companies shaping their cross border offer, refining their approach, and building a stronger path to traction in a new market."}, {"title": "Founder advisory", "text": "Direct support for founders who need clarity on opportunity, structure, go to market thinking, and local realities before making key moves."}, {"title": "Strategic business support", "text": "Help for organisations looking at partnerships, representation, commercial discussions, ecosystem access, and business development across borders."}, {"title": "Cross cultural business guidance", "text": "Support in understanding communication, pace, expectations, and decision making across European and Indian business environments."}]}, "offers": {"title": "What EUICCI Can Help You Do", "items": ["Assess whether Europe or India is the right next market", "Find the right starting point instead of wasting months on the wrong one", "Understand how to present your company in a more credible and locally relevant way", "Connect with useful people instead of chasing cold and weak conversations", "Prepare for meetings, delegations, visits, and commercial discussions", "Clarify how your offer fits the realities of the target market", "Strengthen business development efforts with local context and better structure", "Build more confidence before making major time or money commitments"]}, "sectors": {"title": "Strategic Focus Areas", "cards": [{"title": "Technology and digital services", "text": "Software, AI, product, digital consulting, enterprise services, and technology led growth opportunities."}, {"title": "Industry and manufacturing", "text": "Industrial partnerships, supplier discussions, process improvement, service models, and expansion conversations."}, {"title": "Energy and sustainability", "text": "Clean energy, energy transition related services, sustainability focused business solutions, and industrial efficiency."}, {"title": "Trade and market access", "text": "Commercial access, distribution thinking, representation support, partner search, and business development."}, {"title": "Startups and innovation", "text": "Founder support, investor readiness thinking, partnerships, ecosystem access, and cross border scaling discussions."}, {"title": "Professional services", "text": "Advisory, legal coordination, market research support, strategic guidance, and relationship building."}]}, "advocacy": {"title": "Advocacy", "p1": "EUICCI supports better understanding of the practical issues that affect business engagement between Europe and India. Advocacy here means helping surface business needs, market realities, and common barriers that deserve clearer discussion.", "p2": "This may include issues linked to market access, partnership building, business climate, trade conversations, startup collaboration, investment dialogue, and cross border working conditions.", "p3": "EUICCI aims to represent business concerns with seriousness, balance, and a solution oriented mindset. The goal is not noise. The goal is useful dialogue that helps business move forward."}, "membership": {"title": "Membership", "p1": "EUICCI welcomes entrepreneurs, professionals, advisors, service providers, founders, and companies interested in stronger Europe India ties.", "p2": "Membership is designed for people who want access to a serious network, business dialogue, relevant introductions, and opportunities to take part in useful exchanges.", "p3": "For membership enquiries, contact contact@euicci.com"}, "partnerships": {"title": "Sponsorship and Partnerships", "p1": "EUICCI works with companies and organisations that want to support stronger business engagement between Europe and India.", "p2": "Partnership opportunities may include event support, knowledge collaboration, visibility, introductions, ecosystem participation, and sector led initiatives.", "p3": "For sponsorship, partnership, and business enquiries, contact contact@euicci.com"}, "events": {"title": "Business Dialogues and Meetings", "p1": "EUICCI supports business conversations that bring together professionals, founders, companies, and decision makers interested in Europe India opportunities.", "p2": "These may include roundtables, focused meetings, founder sessions, market discussions, delegation meetings, business introductions, and small group exchanges.", "p3": "Meetings may take place in Paris and Brussels, where EUICCI remains engaged in business activity on a regular basis."}, "leadership": {"title": "President and Founder", "name": "Pankaj Thakur", "role": "President and Founder", "image": "images/founder-placeholder.png", "bio1": "Pankaj Thakur leads EUICCI with a clear purpose: to strengthen meaningful business links between Europe and India through practical support, better conversations, and trusted cross border engagement.", "bio2": "With more than a decade of international experience across Europe and Asia, he has worked with founders, growth stage businesses, and international teams on market expansion, business development, and commercial strategy.", "bio3": "Based in the Paris region and active in Brussels, Pankaj brings a strong international perspective with a practical style of execution. His work is rooted in clarity, relationship building, and helping people turn opportunity into concrete action."}, "board": {"title": "Advisory Board and Expert Network", "p1": "EUICCI is designed to work with a growing circle of advisors, specialists, operators, and business leaders who bring practical knowledge across sectors and markets.", "p2": "This structure helps create stronger conversations, better insight, and more relevant support for members, partners, and business enquiries.", "placeholder": "Advisory board profiles and sector experts can be added here."}, "tiers": {"title": "Membership Pathways", "cards": [{"title": "Individual", "text": "For professionals, consultants, and founders who want network access, discussions, and visibility."}, {"title": "Business", "text": "For companies looking for introductions, engagement support, and stronger Europe India business access."}, {"title": "Strategic Partner", "text": "For organisations seeking deeper collaboration, sponsorship visibility, and long term participation."}]}, "contact": {"title": "Contact EUICCI", "text": "Whether you are exploring a market, looking for a partner, preparing a visit, or seeking consulting support, EUICCI is ready to continue the conversation.", "email": "contact@euicci.com", "phone": "+33 7 59 69 11 08", "address": "Paris, France"}, "footer": {"line1": "Europe India Chamber of Commerce and Industry", "line2": "Paris, France | Brussels, Belgium", "line3": "Membership, sponsorship, and business enquiries: contact@euicci.com"}};
+const fr = {"site": {"name": "Chambre de Commerce et d Industrie Europe Inde", "short": "EUICCI", "tagline": "Soutenir les relations d affaires entre l Europe et l Inde", "location": "Paris, France"}, "hero": {"eyebrow": "Plateforme independante de relations d affaires Europe Inde", "title": "Un lien concret entre l Europe et l Inde", "subtitle": "EUICCI accompagne les entreprises, fondateurs, professionnels et investisseurs qui souhaitent construire de vraies relations d affaires entre l Europe et l Inde avec clarte, confiance et soutien pratique.", "primaryCta": "Parler avec EUICCI", "secondaryCta": "Voir les services"}, "introStats": [{"label": "Base", "value": "Paris, France"}, {"label": "Rencontres", "value": "Paris et Bruxelles"}, {"label": "Focus", "value": "Affaires, commerce, conseil"}, {"label": "Langues", "value": "Anglais et francais"}], "about": {"title": "A propos de EUICCI", "p1": "La Chambre de Commerce et d Industrie Europe Inde rassemble des personnes et des organisations qui veulent travailler entre les marches europeens et indiens. EUICCI existe pour rendre cette demarche plus claire, plus utile et plus proche des besoins reels des entreprises.", "p2": "Le developpement international semble simple vu de loin. En pratique, il depend du contexte, de la confiance, du bon moment, des introductions et d une bonne comprehension locale. EUICCI aide a reduire cette distance grace a un accompagnement concret, un acces au reseau et un soutien en conseil.", "p3": "Base a Paris, avec une presence reguliere a Bruxelles, EUICCI est bien placee pour soutenir les echanges utiles aux entreprises actives en Europe tout en restant proche des opportunites liees a l Inde."}, "why": {"title": "Pourquoi l Europe et l Inde", "items": [{"title": "Une logique economique forte", "text": "L Europe et l Inde offrent de vraies opportunites en commerce, services, partenariats technologiques et croissance commerciale sur le long terme."}, {"title": "Un vrai besoin d accompagnement", "text": "Beaucoup d entreprises veulent explorer l autre marche sans savoir par ou commencer, a qui parler, ni dans quel ordre avancer."}, {"title": "De meilleurs resultats avec de l aide", "text": "Un bon accompagnement des le debut permet de gagner du temps, d eviter des erreurs et de se concentrer sur les bonnes opportunites."}]}, "services": {"title": "Services de conseil et d accompagnement", "intro": "EUICCI propose un soutien utile et concret aux personnes et entreprises qui ont besoin d un partenaire serieux pour les relations d affaires entre l Europe et l Inde.", "cards": [{"title": "Soutien a l entree sur un marche", "text": "Accompagnement pour les entreprises qui veulent explorer l Europe ou l Inde. Cela comprend une premiere lecture du marche, une evaluation de la pertinence et les prochaines etapes concretes."}, {"title": "Introductions d affaires", "text": "Mise en relation avec des partenaires potentiels, conseillers, prestataires, fondateurs et decideurs quand il existe une vraie base de discussion."}, {"title": "Conseil en croissance", "text": "Soutien aux entreprises qui veulent clarifier leur approche, renforcer leur offre et construire un chemin plus solide vers un nouveau marche."}, {"title": "Conseil aux fondateurs", "text": "Accompagnement direct pour les fondateurs qui ont besoin de clarte sur l opportunite, la structure, l approche commerciale et les realites locales."}, {"title": "Soutien strategique aux affaires", "text": "Aide pour les organisations qui travaillent sur des partenariats, une presence locale, des discussions commerciales et le developpement d affaires."}, {"title": "Guidance interculturelle", "text": "Aide a comprendre la communication, le rythme, les attentes et les modes de decision entre les environnements europeens et indiens."}]}, "offers": {"title": "Ce que EUICCI peut vous aider a faire", "items": ["Evaluer si l Europe ou l Inde est le bon prochain marche", "Trouver un point de depart utile sans perdre des mois", "Presenter votre entreprise de facon plus credible et plus adaptee au marche local", "Entrer en contact avec des personnes utiles plutot que multiplier les conversations faibles", "Preparer des reunions, delegations, visites et discussions commerciales", "Verifier si votre offre correspond aux realites du marche vise", "Renforcer vos efforts de developpement avec plus de contexte et de structure", "Avancer avec plus de confiance avant d engager du temps ou de l argent"]}, "sectors": {"title": "Domaines strategiques", "cards": [{"title": "Technologie et services numeriques", "text": "Logiciels, IA, produit, conseil digital, services aux entreprises et opportunites de croissance liees a la technologie."}, {"title": "Industrie et fabrication", "text": "Partenariats industriels, discussions fournisseurs, amelioration des processus, services et expansion."}, {"title": "Energie et durabilite", "text": "Energie propre, services lies a la transition energetique, solutions durables et efficacite industrielle."}, {"title": "Commerce et acces au marche", "text": "Acces commercial, distribution, representation, recherche de partenaires et developpement d affaires."}, {"title": "Startups et innovation", "text": "Soutien aux fondateurs, reflexion sur la preparation investisseurs, partenariats, acces a l ecosysteme et croissance internationale."}, {"title": "Services professionnels", "text": "Conseil, coordination juridique, soutien en etude de marche, orientation strategique et construction de relations."}]}, "advocacy": {"title": "Plaidoyer", "p1": "EUICCI soutient une meilleure comprehension des sujets pratiques qui influencent les relations d affaires entre l Europe et l Inde. Ici, le plaidoyer consiste a faire remonter les besoins des entreprises, les realites du marche et les obstacles qui meritent des echanges plus clairs.", "p2": "Cela peut concerner l acces au marche, la construction de partenariats, le climat des affaires, les discussions commerciales, la collaboration entre startups, le dialogue autour de l investissement et les conditions de travail transfrontalieres.", "p3": "EUICCI cherche a porter ces sujets avec serieux, equilibre et un esprit de solution. Le but n est pas de faire du bruit. Le but est de favoriser des echanges utiles."}, "membership": {"title": "Adhesion", "p1": "EUICCI accueille des entrepreneurs, professionnels, conseillers, prestataires, fondateurs et entreprises interesses par des liens plus forts entre l Europe et l Inde.", "p2": "L adhesion est faite pour les personnes qui veulent acceder a un reseau serieux, participer a des dialogues utiles et ouvrir des opportunites concretes.", "p3": "Pour toute demande d adhesion, contactez contact@euicci.com"}, "partnerships": {"title": "Sponsoring et partenariats", "p1": "EUICCI travaille avec des entreprises et organisations qui souhaitent soutenir des relations d affaires plus fortes entre l Europe et l Inde.", "p2": "Les partenariats peuvent inclure un soutien a des evenements, de la collaboration de contenu, de la visibilite, des introductions et des initiatives sectorielles.", "p3": "Pour le sponsoring, les partenariats et les demandes commerciales, contactez contact@euicci.com"}, "events": {"title": "Dialogues d affaires et rencontres", "p1": "EUICCI soutient des conversations d affaires qui rassemblent professionnels, fondateurs, entreprises et decideurs interesses par les opportunites Europe Inde.", "p2": "Cela peut inclure des tables rondes, des reunions ciblees, des sessions pour fondateurs, des discussions de marche, des reunions de delegation et de petits echanges de groupe.", "p3": "Ces rencontres peuvent avoir lieu a Paris et a Bruxelles, ou EUICCI reste active de facon reguliere."}, "leadership": {"title": "President et Fondateur", "name": "Pankaj Thakur", "role": "President et Fondateur", "image": "images/founder-placeholder.png", "bio1": "Pankaj Thakur dirige EUICCI avec un objectif clair : renforcer des liens d affaires utiles entre l Europe et l Inde grace a un soutien concret, de meilleures conversations et une relation transfrontaliere de confiance.", "bio2": "Avec plus de dix ans d experience internationale entre l Europe et l Asie, il a travaille avec des fondateurs, des entreprises en croissance et des equipes internationales sur l expansion de marche, le developpement d affaires et la strategie commerciale.", "bio3": "Base dans la region parisienne et actif a Bruxelles, Pankaj apporte une perspective internationale avec un style tres concret. Son travail repose sur la clarte, les relations de confiance et la mise en action."}, "board": {"title": "Conseil consultatif et reseau d experts", "p1": "EUICCI est pensee pour travailler avec un cercle evolutif de conseillers, specialistes, operateurs et dirigeants qui apportent une connaissance pratique des secteurs et des marches.", "p2": "Cette structure permet de creer des echanges plus solides, une meilleure lecture du terrain et un soutien plus pertinent pour les membres, partenaires et demandes d affaires.", "placeholder": "Les profils du conseil consultatif et des experts sectoriels peuvent etre ajoutes ici."}, "tiers": {"title": "Parcours d adhesion", "cards": [{"title": "Individuel", "text": "Pour les professionnels, consultants et fondateurs qui veulent un acces au reseau, des discussions et de la visibilite."}, {"title": "Entreprise", "text": "Pour les societes qui cherchent des introductions, un soutien a l engagement et un meilleur acces Europe Inde."}, {"title": "Partenaire strategique", "text": "Pour les organisations qui recherchent une collaboration plus profonde, de la visibilite et une participation sur le long terme."}]}, "contact": {"title": "Contacter EUICCI", "text": "Que vous exploriez un marche, cherchiez un partenaire, prepariez une visite ou ayez besoin d un accompagnement, EUICCI est prete a poursuivre la conversation.", "email": "contact@euicci.com", "phone": "+33 7 59 69 11 08", "address": "Paris, France"}, "footer": {"line1": "Chambre de Commerce et d Industrie Europe Inde", "line2": "Paris, France | Bruxelles, Belgique", "line3": "Adhesion, sponsoring et demandes commerciales : contact@euicci.com"}};
+
+function renderApp(data){
+  const whyClasses = ['blue','gold','green'];
+  const serviceClasses = ['blue','gold','rose','green','violet','blue'];
+  const sectorClasses = ['gold','green','blue','violet','rose','blue'];
+  const tierClasses = ['blue','gold','green'];
+  return `
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="panel hero-main">
+        <div class="eyebrow">${data.hero.eyebrow}</div>
+        <h2>${data.hero.title}</h2>
+        <p class="lead">${data.hero.subtitle}</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">${data.hero.primaryCta}</a>
+          <a class="btn btn-secondary" href="#services">${data.hero.secondaryCta}</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="side-card navy">
+          <h3 style="margin:0 0 8px;">${data.site.name}</h3>
+          <p style="margin:0 0 14px; line-height:1.7;">${data.site.tagline}</p>
+          <div class="stats">
+            ${data.introStats.map(s => `<div class="stat"><span>${s.label}</span><strong>${s.value}</strong></div>`).join('')}
+          </div>
+        </div>
+        <div class="side-card gold">
+          <h3 style="margin:0 0 8px;">${data.contact.title}</h3>
+          <p style="margin:0 0 8px; line-height:1.7;">${data.contact.text}</p>
+          <p style="margin:0;"><strong>${data.contact.address}</strong><br>${data.contact.email}<br>${data.contact.phone}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-head">
+      <h3>${data.about.title}</h3>
+      <p>${data.about.p1}</p>
+    </div>
+    <div class="grid-3">
+      <div class="card blue"><p>${data.about.p2}</p></div>
+      <div class="card gold"><p>${data.about.p3}</p></div>
+      <div class="card green"><h4>${data.site.location}</h4><p>${data.site.tagline}</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h3>${data.why.title}</h3>
+      <p>${data.services.intro}</p>
+    </div>
+    <div class="grid-3">
+      ${data.why.items.map((it, idx) => `<div class="card ${whyClasses[idx % whyClasses.length]}"><h4>${it.title}</h4><p>${it.text}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-head">
+      <h3>${data.services.title}</h3>
+      <p>${data.services.intro}</p>
+    </div>
+    <div class="grid-3">
+      ${data.services.cards.map((c, idx) => `<div class="card ${serviceClasses[idx % serviceClasses.length]}"><h4>${c.title}</h4><p>${c.text}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="band">
+      <div class="section-head" style="margin-bottom:10px;">
+        <h3>${data.offers.title}</h3>
+        <p>${data.partnerships.p2}</p>
+      </div>
+      <ul class="offer-list">
+        ${data.offers.items.map(it => `<li>${it}</li>`).join('')}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h3>${data.sectors.title}</h3>
+      <p>${data.events.p2}</p>
+    </div>
+    <div class="grid-3">
+      ${data.sectors.cards.map((c, idx) => `<div class="card ${sectorClasses[idx % sectorClasses.length]}"><h4>${c.title}</h4><p>${c.text}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="band navy">
+      <div class="section-head" style="margin-bottom:10px;">
+        <h3 style="color:#fff;">${data.advocacy.title}</h3>
+        <p style="color:rgba(255,255,255,.88);">${data.advocacy.p1}</p>
+      </div>
+      <div class="grid-2">
+        <div><p>${data.advocacy.p2}</p></div>
+        <div><p>${data.advocacy.p3}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h3>${data.tiers.title}</h3>
+      <p>${data.membership.p2}</p>
+    </div>
+    <div class="grid-3">
+      ${data.tiers.cards.map((c, idx) => `<div class="card ${tierClasses[idx % tierClasses.length]}"><h4>${c.title}</h4><p>${c.text}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid-2">
+      <div class="card rose">
+        <h4>${data.membership.title}</h4>
+        <p>${data.membership.p1}</p>
+        <p>${data.membership.p2}</p>
+        <p><strong>${data.membership.p3}</strong></p>
+      </div>
+      <div class="card violet">
+        <h4>${data.partnerships.title}</h4>
+        <p>${data.partnerships.p1}</p>
+        <p>${data.partnerships.p2}</p>
+        <p><strong>${data.partnerships.p3}</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h3>${data.events.title}</h3>
+      <p>${data.events.p1}</p>
+    </div>
+    <div class="timeline">
+      <div class="step"><div class="num">1</div><h4 style="margin:0 0 8px;">Dialogue</h4><p>${data.events.p2}</p></div>
+      <div class="step"><div class="num">2</div><h4 style="margin:0 0 8px;">Meetings</h4><p>${data.events.p3}</p></div>
+      <div class="step"><div class="num">3</div><h4 style="margin:0 0 8px;">Introductions</h4><p>${data.services.cards[1].text}</p></div>
+      <div class="step"><div class="num">4</div><h4 style="margin:0 0 8px;">Follow through</h4><p>${data.services.cards[4].text}</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="leadership">
+      <div class="portrait">
+        <img src="${data.leadership.image}" alt="${data.leadership.name}">
+      </div>
+      <div class="card">
+        <div class="small">${data.leadership.title}</div>
+        <h3 style="font-size:34px; margin:8px 0 4px;">${data.leadership.name}</h3>
+        <p style="font-weight:700; margin-top:0;">${data.leadership.role}</p>
+        <p>${data.leadership.bio1}</p>
+        <p>${data.leadership.bio2}</p>
+        <p>${data.leadership.bio3}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid-2">
+      <div class="card blue">
+        <h4>${data.board.title}</h4>
+        <p>${data.board.p1}</p>
+        <p>${data.board.p2}</p>
+        <p><strong>${data.board.placeholder}</strong></p>
+      </div>
+      <div class="card gold" id="contact">
+        <h4>${data.contact.title}</h4>
+        <p>${data.contact.text}</p>
+        <p><strong>${data.contact.address}</strong></p>
+        <p>${data.contact.email}<br>${data.contact.phone}</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-wrap">
+      <div class="footer-grid">
+        <div>
+          <h3 style="margin-top:0;">${data.footer.line1}</h3>
+          <p style="line-height:1.8; color:rgba(255,255,255,.88);">${data.site.tagline}<br>${data.footer.line2}</p>
+        </div>
+        <div>
+          <p style="line-height:1.8; color:rgba(255,255,255,.88); margin:0;">${data.footer.line3}</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  `;
+}
+
+document.getElementById('app-en').innerHTML = renderApp(en);
+document.getElementById('app-fr').innerHTML = renderApp(fr);
+
+function setBrand(data){
+  document.getElementById('brandName').textContent = data.site.short + " | " + data.site.name;
+  document.getElementById('brandTag').textContent = data.site.tagline;
+}
+function setLang(lang){
+  document.querySelectorAll('[data-lang]').forEach(el => el.classList.remove('active'));
+  document.getElementById('app-'+lang).classList.add('active');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  document.getElementById('btn-fr').classList.toggle('active', lang==='fr');
+  setBrand(lang==='en' ? en : fr);
+}
+setBrand(en);
+</script>
+</body>
+</html>

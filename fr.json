@@ -1,0 +1,196 @@
+{
+  "site": {
+    "name": "Chambre de Commerce et d Industrie Europe Inde",
+    "short": "EUICCI",
+    "tagline": "Soutenir les relations d affaires entre l Europe et l Inde",
+    "location": "Paris, France"
+  },
+  "hero": {
+    "eyebrow": "Plateforme independante de relations d affaires Europe Inde",
+    "title": "Un lien concret entre l Europe et l Inde",
+    "subtitle": "EUICCI accompagne les entreprises, fondateurs, professionnels et investisseurs qui souhaitent construire de vraies relations d affaires entre l Europe et l Inde avec clarte, confiance et soutien pratique.",
+    "primaryCta": "Parler avec EUICCI",
+    "secondaryCta": "Voir les services"
+  },
+  "introStats": [
+    {
+      "label": "Base",
+      "value": "Paris, France"
+    },
+    {
+      "label": "Rencontres",
+      "value": "Paris et Bruxelles"
+    },
+    {
+      "label": "Focus",
+      "value": "Affaires, commerce, conseil"
+    },
+    {
+      "label": "Langues",
+      "value": "Anglais et francais"
+    }
+  ],
+  "about": {
+    "title": "A propos de EUICCI",
+    "p1": "La Chambre de Commerce et d Industrie Europe Inde rassemble des personnes et des organisations qui veulent travailler entre les marches europeens et indiens. EUICCI existe pour rendre cette demarche plus claire, plus utile et plus proche des besoins reels des entreprises.",
+    "p2": "Le developpement international semble simple vu de loin. En pratique, il depend du contexte, de la confiance, du bon moment, des introductions et d une bonne comprehension locale. EUICCI aide a reduire cette distance grace a un accompagnement concret, un acces au reseau et un soutien en conseil.",
+    "p3": "Base a Paris, avec une presence reguliere a Bruxelles, EUICCI est bien placee pour soutenir les echanges utiles aux entreprises actives en Europe tout en restant proche des opportunites liees a l Inde."
+  },
+  "why": {
+    "title": "Pourquoi l Europe et l Inde",
+    "items": [
+      {
+        "title": "Une logique economique forte",
+        "text": "L Europe et l Inde offrent de vraies opportunites en commerce, services, partenariats technologiques et croissance commerciale sur le long terme."
+      },
+      {
+        "title": "Un vrai besoin d accompagnement",
+        "text": "Beaucoup d entreprises veulent explorer l autre marche sans savoir par ou commencer, a qui parler, ni dans quel ordre avancer."
+      },
+      {
+        "title": "De meilleurs resultats avec de l aide",
+        "text": "Un bon accompagnement des le debut permet de gagner du temps, d eviter des erreurs et de se concentrer sur les bonnes opportunites."
+      }
+    ]
+  },
+  "services": {
+    "title": "Services de conseil et d accompagnement",
+    "intro": "EUICCI propose un soutien utile et concret aux personnes et entreprises qui ont besoin d un partenaire serieux pour les relations d affaires entre l Europe et l Inde.",
+    "cards": [
+      {
+        "title": "Soutien a l entree sur un marche",
+        "text": "Accompagnement pour les entreprises qui veulent explorer l Europe ou l Inde. Cela comprend une premiere lecture du marche, une evaluation de la pertinence et les prochaines etapes concretes."
+      },
+      {
+        "title": "Introductions d affaires",
+        "text": "Mise en relation avec des partenaires potentiels, conseillers, prestataires, fondateurs et decideurs quand il existe une vraie base de discussion."
+      },
+      {
+        "title": "Conseil en croissance",
+        "text": "Soutien aux entreprises qui veulent clarifier leur approche, renforcer leur offre et construire un chemin plus solide vers un nouveau marche."
+      },
+      {
+        "title": "Conseil aux fondateurs",
+        "text": "Accompagnement direct pour les fondateurs qui ont besoin de clarte sur l opportunite, la structure, l approche commerciale et les realites locales."
+      },
+      {
+        "title": "Soutien strategique aux affaires",
+        "text": "Aide pour les organisations qui travaillent sur des partenariats, une presence locale, des discussions commerciales et le developpement d affaires."
+      },
+      {
+        "title": "Guidance interculturelle",
+        "text": "Aide a comprendre la communication, le rythme, les attentes et les modes de decision entre les environnements europeens et indiens."
+      }
+    ]
+  },
+  "offers": {
+    "title": "Ce que EUICCI peut vous aider a faire",
+    "items": [
+      "Evaluer si l Europe ou l Inde est le bon prochain marche",
+      "Trouver un point de depart utile sans perdre des mois",
+      "Presenter votre entreprise de facon plus credible et plus adaptee au marche local",
+      "Entrer en contact avec des personnes utiles plutot que multiplier les conversations faibles",
+      "Preparer des reunions, delegations, visites et discussions commerciales",
+      "Verifier si votre offre correspond aux realites du marche vise",
+      "Renforcer vos efforts de developpement avec plus de contexte et de structure",
+      "Avancer avec plus de confiance avant d engager du temps ou de l argent"
+    ]
+  },
+  "sectors": {
+    "title": "Domaines strategiques",
+    "cards": [
+      {
+        "title": "Technologie et services numeriques",
+        "text": "Logiciels, IA, produit, conseil digital, services aux entreprises et opportunites de croissance liees a la technologie."
+      },
+      {
+        "title": "Industrie et fabrication",
+        "text": "Partenariats industriels, discussions fournisseurs, amelioration des processus, services et expansion."
+      },
+      {
+        "title": "Energie et durabilite",
+        "text": "Energie propre, services lies a la transition energetique, solutions durables et efficacite industrielle."
+      },
+      {
+        "title": "Commerce et acces au marche",
+        "text": "Acces commercial, distribution, representation, recherche de partenaires et developpement d affaires."
+      },
+      {
+        "title": "Startups et innovation",
+        "text": "Soutien aux fondateurs, reflexion sur la preparation investisseurs, partenariats, acces a l ecosysteme et croissance internationale."
+      },
+      {
+        "title": "Services professionnels",
+        "text": "Conseil, coordination juridique, soutien en etude de marche, orientation strategique et construction de relations."
+      }
+    ]
+  },
+  "advocacy": {
+    "title": "Plaidoyer",
+    "p1": "EUICCI soutient une meilleure comprehension des sujets pratiques qui influencent les relations d affaires entre l Europe et l Inde. Ici, le plaidoyer consiste a faire remonter les besoins des entreprises, les realites du marche et les obstacles qui meritent des echanges plus clairs.",
+    "p2": "Cela peut concerner l acces au marche, la construction de partenariats, le climat des affaires, les discussions commerciales, la collaboration entre startups, le dialogue autour de l investissement et les conditions de travail transfrontalieres.",
+    "p3": "EUICCI cherche a porter ces sujets avec serieux, equilibre et un esprit de solution. Le but n est pas de faire du bruit. Le but est de favoriser des echanges utiles."
+  },
+  "membership": {
+    "title": "Adhesion",
+    "p1": "EUICCI accueille des entrepreneurs, professionnels, conseillers, prestataires, fondateurs et entreprises interesses par des liens plus forts entre l Europe et l Inde.",
+    "p2": "L adhesion est faite pour les personnes qui veulent acceder a un reseau serieux, participer a des dialogues utiles et ouvrir des opportunites concretes.",
+    "p3": "Pour toute demande d adhesion, contactez contact@euicci.com"
+  },
+  "partnerships": {
+    "title": "Sponsoring et partenariats",
+    "p1": "EUICCI travaille avec des entreprises et organisations qui souhaitent soutenir des relations d affaires plus fortes entre l Europe et l Inde.",
+    "p2": "Les partenariats peuvent inclure un soutien a des evenements, de la collaboration de contenu, de la visibilite, des introductions et des initiatives sectorielles.",
+    "p3": "Pour le sponsoring, les partenariats et les demandes commerciales, contactez contact@euicci.com"
+  },
+  "events": {
+    "title": "Dialogues d affaires et rencontres",
+    "p1": "EUICCI soutient des conversations d affaires qui rassemblent professionnels, fondateurs, entreprises et decideurs interesses par les opportunites Europe Inde.",
+    "p2": "Cela peut inclure des tables rondes, des reunions ciblees, des sessions pour fondateurs, des discussions de marche, des reunions de delegation et de petits echanges de groupe.",
+    "p3": "Ces rencontres peuvent avoir lieu a Paris et a Bruxelles, ou EUICCI reste active de facon reguliere."
+  },
+  "leadership": {
+    "title": "President et Fondateur",
+    "name": "Pankaj Thakur",
+    "role": "President et Fondateur",
+    "image": "images/founder-placeholder.png",
+    "bio1": "Pankaj Thakur dirige EUICCI avec un objectif clair : renforcer des liens d affaires utiles entre l Europe et l Inde grace a un soutien concret, de meilleures conversations et une relation transfrontaliere de confiance.",
+    "bio2": "Avec plus de dix ans d experience internationale entre l Europe et l Asie, il a travaille avec des fondateurs, des entreprises en croissance et des equipes internationales sur l expansion de marche, le developpement d affaires et la strategie commerciale.",
+    "bio3": "Base dans la region parisienne et actif a Bruxelles, Pankaj apporte une perspective internationale avec un style tres concret. Son travail repose sur la clarte, les relations de confiance et la mise en action."
+  },
+  "board": {
+    "title": "Conseil consultatif et reseau d experts",
+    "p1": "EUICCI est pensee pour travailler avec un cercle evolutif de conseillers, specialistes, operateurs et dirigeants qui apportent une connaissance pratique des secteurs et des marches.",
+    "p2": "Cette structure permet de creer des echanges plus solides, une meilleure lecture du terrain et un soutien plus pertinent pour les membres, partenaires et demandes d affaires.",
+    "placeholder": "Les profils du conseil consultatif et des experts sectoriels peuvent etre ajoutes ici."
+  },
+  "tiers": {
+    "title": "Parcours d adhesion",
+    "cards": [
+      {
+        "title": "Individuel",
+        "text": "Pour les professionnels, consultants et fondateurs qui veulent un acces au reseau, des discussions et de la visibilite."
+      },
+      {
+        "title": "Entreprise",
+        "text": "Pour les societes qui cherchent des introductions, un soutien a l engagement et un meilleur acces Europe Inde."
+      },
+      {
+        "title": "Partenaire strategique",
+        "text": "Pour les organisations qui recherchent une collaboration plus profonde, de la visibilite et une participation sur le long terme."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacter EUICCI",
+    "text": "Que vous exploriez un marche, cherchiez un partenaire, prepariez une visite ou ayez besoin d un accompagnement, EUICCI est prete a poursuivre la conversation.",
+    "email": "contact@euicci.com",
+    "phone": "+33 7 59 69 11 08",
+    "address": "Paris, France"
+  },
+  "footer": {
+    "line1": "Chambre de Commerce et d Industrie Europe Inde",
+    "line2": "Paris, France | Bruxelles, Belgique",
+    "line3": "Adhesion, sponsoring et demandes commerciales : contact@euicci.com"
+  }
+}

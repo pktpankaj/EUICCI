@@ -1,0 +1,196 @@
+{
+  "site": {
+    "name": "Europe India Chamber of Commerce and Industry",
+    "short": "EUICCI",
+    "tagline": "Supporting Europe India Business Engagement",
+    "location": "Paris, France"
+  },
+  "hero": {
+    "eyebrow": "Independent Europe India business platform",
+    "title": "A practical bridge between Europe and India",
+    "subtitle": "EUICCI supports companies, founders, professionals, and investors looking to build real business links between Europe and India with clarity, trusted guidance, and practical support.",
+    "primaryCta": "Speak with EUICCI",
+    "secondaryCta": "Explore Services"
+  },
+  "introStats": [
+    {
+      "label": "Base",
+      "value": "Paris, France"
+    },
+    {
+      "label": "Meetups",
+      "value": "Paris and Brussels"
+    },
+    {
+      "label": "Focus",
+      "value": "Business, trade, advisory"
+    },
+    {
+      "label": "Languages",
+      "value": "English and French"
+    }
+  ],
+  "about": {
+    "title": "About EUICCI",
+    "p1": "The Europe India Chamber of Commerce and Industry brings together people and organisations that want to work across European and Indian markets. EUICCI exists to make this journey clearer, more useful, and more grounded in real business needs.",
+    "p2": "Cross border growth often sounds simple from the outside. In reality, it depends on context, trust, timing, introductions, and local understanding. EUICCI helps reduce that distance by offering practical guidance, business access, and consulting support that helps people move from interest to action.",
+    "p3": "Based in Paris, with regular business presence in Brussels, EUICCI is positioned to support discussions that matter to companies operating in Europe while staying closely connected to India focused opportunities."
+  },
+  "why": {
+    "title": "Why Europe and India",
+    "items": [
+      {
+        "title": "Strong economic logic",
+        "text": "Europe and India offer real room for trade, service partnerships, technology exchange, and long term commercial growth."
+      },
+      {
+        "title": "Real demand for support",
+        "text": "Many businesses want to explore the other market but do not know where to start, who to trust, or how to move in the right order."
+      },
+      {
+        "title": "Better outcomes through guidance",
+        "text": "Good support at the start can save time, reduce avoidable mistakes, and help people focus on the opportunities that are worth pursuing."
+      }
+    ]
+  },
+  "services": {
+    "title": "Consulting and Advisory Services",
+    "intro": "EUICCI offers value led support for people and businesses that need a serious partner for Europe India business engagement. The work is practical, human, and focused on outcomes that matter.",
+    "cards": [
+      {
+        "title": "Market entry support",
+        "text": "Help for companies exploring entry into Europe or India. This includes early market review, fit assessment, positioning guidance, and practical next steps."
+      },
+      {
+        "title": "Business introductions",
+        "text": "Relevant introductions to potential partners, advisors, service providers, founders, and decision makers where there is a real basis for discussion."
+      },
+      {
+        "title": "Growth consulting",
+        "text": "Support for companies shaping their cross border offer, refining their approach, and building a stronger path to traction in a new market."
+      },
+      {
+        "title": "Founder advisory",
+        "text": "Direct support for founders who need clarity on opportunity, structure, go to market thinking, and local realities before making key moves."
+      },
+      {
+        "title": "Strategic business support",
+        "text": "Help for organisations looking at partnerships, representation, commercial discussions, ecosystem access, and business development across borders."
+      },
+      {
+        "title": "Cross cultural business guidance",
+        "text": "Support in understanding communication, pace, expectations, and decision making across European and Indian business environments."
+      }
+    ]
+  },
+  "offers": {
+    "title": "What EUICCI Can Help You Do",
+    "items": [
+      "Assess whether Europe or India is the right next market",
+      "Find the right starting point instead of wasting months on the wrong one",
+      "Understand how to present your company in a more credible and locally relevant way",
+      "Connect with useful people instead of chasing cold and weak conversations",
+      "Prepare for meetings, delegations, visits, and commercial discussions",
+      "Clarify how your offer fits the realities of the target market",
+      "Strengthen business development efforts with local context and better structure",
+      "Build more confidence before making major time or money commitments"
+    ]
+  },
+  "sectors": {
+    "title": "Strategic Focus Areas",
+    "cards": [
+      {
+        "title": "Technology and digital services",
+        "text": "Software, AI, product, digital consulting, enterprise services, and technology led growth opportunities."
+      },
+      {
+        "title": "Industry and manufacturing",
+        "text": "Industrial partnerships, supplier discussions, process improvement, service models, and expansion conversations."
+      },
+      {
+        "title": "Energy and sustainability",
+        "text": "Clean energy, energy transition related services, sustainability focused business solutions, and industrial efficiency."
+      },
+      {
+        "title": "Trade and market access",
+        "text": "Commercial access, distribution thinking, representation support, partner search, and business development."
+      },
+      {
+        "title": "Startups and innovation",
+        "text": "Founder support, investor readiness thinking, partnerships, ecosystem access, and cross border scaling discussions."
+      },
+      {
+        "title": "Professional services",
+        "text": "Advisory, legal coordination, market research support, strategic guidance, and relationship building."
+      }
+    ]
+  },
+  "advocacy": {
+    "title": "Advocacy",
+    "p1": "EUICCI supports better understanding of the practical issues that affect business engagement between Europe and India. Advocacy here means helping surface business needs, market realities, and common barriers that deserve clearer discussion.",
+    "p2": "This may include issues linked to market access, partnership building, business climate, trade conversations, startup collaboration, investment dialogue, and cross border working conditions.",
+    "p3": "EUICCI aims to represent business concerns with seriousness, balance, and a solution oriented mindset. The goal is not noise. The goal is useful dialogue that helps business move forward."
+  },
+  "membership": {
+    "title": "Membership",
+    "p1": "EUICCI welcomes entrepreneurs, professionals, advisors, service providers, founders, and companies interested in stronger Europe India ties.",
+    "p2": "Membership is designed for people who want access to a serious network, business dialogue, relevant introductions, and opportunities to take part in useful exchanges.",
+    "p3": "For membership enquiries, contact contact@euicci.com"
+  },
+  "partnerships": {
+    "title": "Sponsorship and Partnerships",
+    "p1": "EUICCI works with companies and organisations that want to support stronger business engagement between Europe and India.",
+    "p2": "Partnership opportunities may include event support, knowledge collaboration, visibility, introductions, ecosystem participation, and sector led initiatives.",
+    "p3": "For sponsorship, partnership, and business enquiries, contact contact@euicci.com"
+  },
+  "events": {
+    "title": "Business Dialogues and Meetings",
+    "p1": "EUICCI supports business conversations that bring together professionals, founders, companies, and decision makers interested in Europe India opportunities.",
+    "p2": "These may include roundtables, focused meetings, founder sessions, market discussions, delegation meetings, business introductions, and small group exchanges.",
+    "p3": "Meetings may take place in Paris and Brussels, where EUICCI remains engaged in business activity on a regular basis."
+  },
+  "leadership": {
+    "title": "President and Founder",
+    "name": "Pankaj Thakur",
+    "role": "President and Founder",
+    "image": "images/founder-placeholder.png",
+    "bio1": "Pankaj Thakur leads EUICCI with a clear purpose: to strengthen meaningful business links between Europe and India through practical support, better conversations, and trusted cross border engagement.",
+    "bio2": "With more than a decade of international experience across Europe and Asia, he has worked with founders, growth stage businesses, and international teams on market expansion, business development, and commercial strategy.",
+    "bio3": "Based in the Paris region and active in Brussels, Pankaj brings a strong international perspective with a practical style of execution. His work is rooted in clarity, relationship building, and helping people turn opportunity into concrete action."
+  },
+  "board": {
+    "title": "Advisory Board and Expert Network",
+    "p1": "EUICCI is designed to work with a growing circle of advisors, specialists, operators, and business leaders who bring practical knowledge across sectors and markets.",
+    "p2": "This structure helps create stronger conversations, better insight, and more relevant support for members, partners, and business enquiries.",
+    "placeholder": "Advisory board profiles and sector experts can be added here."
+  },
+  "tiers": {
+    "title": "Membership Pathways",
+    "cards": [
+      {
+        "title": "Individual",
+        "text": "For professionals, consultants, and founders who want network access, discussions, and visibility."
+      },
+      {
+        "title": "Business",
+        "text": "For companies looking for introductions, engagement support, and stronger Europe India business access."
+      },
+      {
+        "title": "Strategic Partner",
+        "text": "For organisations seeking deeper collaboration, sponsorship visibility, and long term participation."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact EUICCI",
+    "text": "Whether you are exploring a market, looking for a partner, preparing a visit, or seeking consulting support, EUICCI is ready to continue the conversation.",
+    "email": "contact@euicci.com",
+    "phone": "+33 7 59 69 11 08",
+    "address": "Paris, France"
+  },
+  "footer": {
+    "line1": "Europe India Chamber of Commerce and Industry",
+    "line2": "Paris, France | Brussels, Belgium",
+    "line3": "Membership, sponsorship, and business enquiries: contact@euicci.com"
+  }
+}
