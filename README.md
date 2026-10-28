@@ -1,75 +1,155 @@
+![Pankaj Thakur — President, Europe-India Chamber of Commerce & Industry](./assets/profile/executive-header.svg)
+
 # Pankaj Thakur
 
-### Marketing operations, AI automation and product development
+### President, Europe-India Chamber of Commerce & Industry
+**International growth · Commercial strategy · Strategic partnerships · Talent mobility**
 
-Paris, France · [LinkedIn](https://www.linkedin.com/in/pankajvnt/) · [GitHub](https://github.com/pktpankaj)
+Paris region, France · Active in Brussels · Europe–India focus
 
-I connect commercial strategy with the systems needed to put it into practice. My background spans 15 years in sales, marketing and B2B growth. Alongside leading marketing teams, I build web applications, connect business tools and develop automation around real operational problems.
-
-My current development work centres on SkyZeg, a travel platform built with Laravel, and Wionsulting, an early-stage workspace for B2B growth. I use AI-assisted development to turn product requirements into working software, then review the implementation through tests, documentation and practical validation.
-
-## Selected development work
-
-### SkyZeg — travel platform and traveller services
-
-I am developing SkyZeg on a shared Laravel application, bringing together travel content, administration and private traveller features. The work includes:
-
-- **Content management:** Filament administration for destinations, journeys, itineraries, departures, accommodation, guides and reusable page content.
-- **Multilingual publishing:** ten-language content architecture, translated URLs, language fallbacks and publication rules.
-- **Public experience:** responsive Blade templates, mobile navigation, search across eight content types, pagination and enquiry forms.
-- **SEO foundations:** canonical URLs, hreflang, structured data, sitemaps and explicit indexing controls.
-- **Media management:** a shared media library with reusable content assignments, visibility rules and server-side image handling.
-- **Access and privacy:** staff permissions, separate traveller access, owner-scoped records and consent-controlled sharing.
-- **Traveller and commerce foundations:** progressive profiles, trip records, bounded traveller context and provider-neutral booking structures.
-- **Engineering practice:** database migrations, automated PHP tests, JavaScript interaction checks, deployment documentation and rollback preparation.
-
-The platform remains in development. Implemented foundations do not imply that all traveller services, supplier connections or payment processing are live.
-
-**Stack:** PHP · Laravel · MySQL/MariaDB · Filament · Livewire · Blade · HTML · CSS · JavaScript · Tailwind CSS · PHPUnit · Git/GitHub
-
-### Wionsulting — AI-assisted B2B growth workspace
-
-I am shaping Wionsulting around a practical problem: helping B2B teams decide which accounts fit their product, understand the evidence and prepare a relevant approach.
-
-The repository currently contains a Laravel application scaffold and development tooling. The product workflows below are planned and are being developed incrementally:
-
-| Planned workflow | Intended output |
-| --- | --- |
-| Company research | A sourced account brief with relevant business facts |
-| ICP qualification | Fit assessment with reasons, exclusions and unknowns |
-| Use-case matching | An explanation of how the customer's product could help |
-| Outreach preparation | Personalised drafts for human review |
-| Review and measurement | Approval history, feedback, usage and cost tracking |
-
-The proposed first release uses CSV/manual inputs and OpenAI-powered research and analysis. CRM integrations and broader AI search visibility monitoring are later possibilities. These are product plans, rather than claims of completed functionality.
-
-## Technical focus
-
-| Area | Practical focus |
-| --- | --- |
-| Application development | Laravel services, Eloquent models, relational data, validation and server-rendered interfaces |
-| Administration | Filament resources, Livewire interactions and role-based permissions |
-| AI-assisted workflows | Task definition, structured outputs, evidence, approval boundaries and output review |
-| Integrations | API-based workflows, field mapping and controlled movement of business data |
-| Quality and delivery | PHPUnit, regression checks, Git history, documented releases and environment configuration |
-| Discoverability | Technical SEO, multilingual publishing and research into AI search visibility |
-
-## Marketing and commercial experience
-
-My development work builds on experience in positioning, acquisition, lifecycle marketing, CRM operations and commercial reporting. I have worked with HubSpot, Pipedrive, Customer.io, Brevo, GA4, Google Tag Manager and Looker Studio.
-
-Selected roles include Head of Growth at mypaperwork.ai, Head of Marketing at Wello Solutions, freelance work in the CEO Office at Predictive AI, and Head of Growth at freihandlabor. Earlier roles included co-founding SkyZeg and leading international sales and marketing at Parallels and Meridians.
-
-That background helps me define what an application should accomplish for its users, which information matters and how to judge whether a workflow is useful.
-
-## How I work
-
-I start with the business process and expected result, then define the data, permissions and steps needed to support it. For AI workflows, I want source-backed recommendations, explicit unknowns and a clear point where a person reviews consequential actions.
-
-I use ChatGPT and other development tools as part of that process. Product judgement, testing and release decisions remain essential parts of the work.
-
-[Contact me on LinkedIn](https://www.linkedin.com/in/pankajvnt/)
+[EUICCI](https://www.euicci.com/) · [Leadership biography](https://www.euicci.com/about/) · [LinkedIn](https://www.linkedin.com/in/pankajvnt/) · [Start a conversation](https://www.euicci.com/contact/)
 
 ---
 
-**Repository note:** This repository hosts my development portfolio alongside the existing EUICCI HTML preview and language files. [View the EUICCI preview source](./euicci_chamber_grade_preview.html).
+## Executive perspective
+
+I lead the Europe-India Chamber of Commerce & Industry with a practical objective: help people and businesses make better decisions across borders, build relationships they can rely on and move from an initial opportunity to a workable next step.
+
+My background spans more than a decade of international experience across Europe and Asia, working with entrepreneurs, growth-stage companies and international teams on market expansion, business development and commercial strategy. I combine that commercial perspective with an understanding of the local context, the people involved and the work required after a first introduction.
+
+Through EUICCI, that focus connects three priorities: Indian companies entering Europe, European companies growing in India, and skilled professionals preparing for opportunities across the corridor.
+
+## Leadership focus
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+![Market entry & growth](./assets/profile/market-entry.svg)
+
+**Strategic choice before expansion.** Assess market relevance, sharpen positioning and define a credible first move. Bring the offer, route to market, local relationships and execution priorities into the same conversation.
+
+[Explore market-entry support](https://www.euicci.com/services/market-entry/)
+
+</td>
+<td width="50%" valign="top">
+
+![Partnerships & dialogue](./assets/profile/partnerships.svg)
+
+**Relationships with a clear purpose.** Create relevant conversations between founders, companies, advisers and decision makers. Carry the context from the first meeting into the discussions that follow.
+
+[Explore business dialogues](https://www.euicci.com/business-dialogues/)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+![Talent & employer alignment](./assets/profile/talent.svg)
+
+**People as part of the growth strategy.** Connect employer needs with candidate preparation, local expectations and the practicalities of moving between markets. Keep fair recruitment and realistic guidance central.
+
+[Explore employer support](https://www.euicci.com/employers/)
+
+</td>
+<td width="50%" valign="top">
+
+![Institutional development](./assets/profile/institution.svg)
+
+**A useful platform for participation.** Connect membership, expert contributions, knowledge sharing and business advocacy. Help turn individual questions into conversations that benefit the wider business community.
+
+[Explore membership and partnerships](https://www.euicci.com/membership/)
+
+</td>
+</tr>
+</table>
+
+## The decisions I help leaders frame
+
+EUICCI's advisory work is organised around consequential choices rather than a generic expansion checklist.
+
+| Leadership question | Focus of the work |
+| --- | --- |
+| **Is this the right next market?** | Market relevance, fit, timing and the assumptions worth testing before committing resources. |
+| **Where should we begin?** | A European country or Indian location that fits the customer base, operating needs and first priorities. |
+| **How should we enter?** | Comparing commercial routes, local partners and establishment options, with specialist input where required. |
+| **Will the offer make sense locally?** | Positioning, messaging, pricing considerations and the route to early customers. |
+| **Who needs to be involved?** | Founders, local leadership, commercial partners, advisers and the people responsible for follow-through. |
+| **What makes the next step credible?** | A clear scope, relevant introductions, practical milestones and explicit ownership. |
+
+[Market-entry advisory](https://www.euicci.com/services/market-entry/) · [Founder advisory](https://www.euicci.com/services/founder-advisory/) · [Growth consulting](https://www.euicci.com/services/growth-consulting/)
+
+## From strategy to follow-through
+
+![Listen, assess, connect and follow through](./assets/profile/engagement-process.svg)
+
+**Listen.** Start with the business objective and the context behind it. Understand what the organisation needs to achieve and what is getting in the way.
+
+**Assess.** Review fit, timing and the available options. Surface the questions that need research or specialist advice before a decision is made.
+
+**Connect.** Bring relevant people into a focused discussion when there is a clear basis for collaboration.
+
+**Follow through.** Keep the discussion connected to its purpose as it develops into a partnership, representation arrangement or commercial next step.
+
+## Building the chamber platform
+
+### Business dialogue and strategic relationships
+
+EUICCI brings together professionals, founders and business decision makers through focused meetings, roundtables and small-group exchanges in Paris, Brussels and online. The purpose is to create space for useful discussion and relevant introductions, with attention to what happens after the meeting.
+
+[Business dialogues](https://www.euicci.com/business-dialogues/) · [Strategic business support](https://www.euicci.com/services/strategic-business-support/)
+
+### Membership, partnerships and expert participation
+
+The chamber offers pathways for individuals, businesses and strategic partners. Participation can include knowledge contributions, sector discussions, joint initiatives and support for business dialogues. The emphasis is on relevance and continuity: a network becomes valuable through the quality of participation.
+
+[Membership and partnership pathways](https://www.euicci.com/membership/)
+
+### Business advocacy and cross-cultural understanding
+
+Market access, partnership barriers, administrative friction and talent mobility are recurring subjects in the chamber's work. EUICCI's advocacy approach draws on concrete business experience and constructive proposals. Cross-cultural guidance adds another practical layer: how people communicate, make decisions and maintain trust across markets.
+
+[Advocacy](https://www.euicci.com/advocacy/) · [Cross-cultural business guidance](https://www.euicci.com/services/cross-cultural-guidance/)
+
+## Commercial breadth
+
+The advisory platform addresses technology and digital services, industry and manufacturing, energy and sustainability, trade and market access, startups and professional services.
+
+Talent-related guidance also covers fields including healthcare, engineering, hospitality, culinary work and skilled trades. The support required differs by sector; the common thread is understanding the local need before proposing a route forward.
+
+[Consulting and advisory](https://www.euicci.com/services/) · [Sector guides](https://www.euicci.com/sectors/)
+
+## Digital delivery and trusted knowledge
+
+The public EUICCI platform turns complex cross-border questions into accessible guides, country information and clear enquiry routes. It separates professional mobility, employer needs and business expansion so visitors can find support relevant to their situation.
+
+That reflects how I approach digital work: begin with the user's decision, structure the information around it and make the next action clear. Commercial judgement, useful content and a dependable digital experience need to work together.
+
+## Continued professional development
+
+My wider learning portfolio complements this leadership focus with training in AI, business analytics, product strategy, marketing operations and delivery.
+
+| Portfolio | Related areas |
+| --- | --- |
+| [GrowthTribe](https://github.com/pktpankaj/GrowthTribe-Certificates) | AI literacy, business analytics, product strategy, growth and digital leadership |
+| [CXL](https://github.com/pktpankaj/CXL) | Marketing leadership, analytics, commercial services and project delivery |
+| [HubSpot Academy](https://github.com/pktpankaj/HubSpot) | Inbound strategy, customer communication, sales management and revenue operations |
+
+---
+
+## Connect
+
+For conversations about Europe–India expansion, commercial partnerships, founder advisory or chamber participation:
+
+[Contact EUICCI](https://www.euicci.com/contact/) · [Connect with me on LinkedIn](https://www.linkedin.com/in/pankajvnt/) · [Visit the chamber](https://www.euicci.com/)
+
+<details>
+<summary><strong>About this repository</strong></summary>
+
+This is an executive profile and EUICCI portfolio repository. The existing [HTML concept preview](./euicci_chamber_grade_preview.html), [English language file](./en.json) and [French language file](./fr.json) are retained.
+
+The [live website](https://www.euicci.com/) is the reference for current chamber services and guidance. The HTML preview is an earlier concept, rather than a copy of the current production website.
+
+Profile scope is grounded in the chamber's [published leadership biography](https://www.euicci.com/about/), [advisory services](https://www.euicci.com/services/), [membership](https://www.euicci.com/membership/), [business dialogues](https://www.euicci.com/business-dialogues/) and [advocacy](https://www.euicci.com/advocacy/) pages.
+
+</details>
